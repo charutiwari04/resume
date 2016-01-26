@@ -1,0 +1,25 @@
+body{
+	background-color: #F8F8FF;
+	color: #00009C;
+}
+header{
+	background-color:#CCCCFF;
+}
+table{
+	width:100%;
+	border: 1px solid #ededed;
+	background-color: white;
+	border-collapse: collapse;
+}
+#heading{
+	background-color:#CCCCFF;
+	width=100%;
+}
+tr td{
+	border-bottom: 1px solid #ededed;
+}
+
+footer{
+	background-color:#CCCCFF;
+	text-align: center;
+}

@@ -1,0 +1,40 @@
+<!Doctype html>
+<html lang="en" ng-app="coinageApp">
+<head>
+<![if gte IE 10]>
+<meta http-equiv="Content-Type" content="text/html; charset=Unicode">
+<![endif]>
+<![if !IE]>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<![endif]>
+<title>Coinage</title>
+<link rel="stylesheet" type="text/css" href="coinage.css" >
+<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="coinage.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+   <header><h1><b>Coinage v1.0</b></h1></header>
+   <div class="content">
+       <form name="myform"> 
+	      Enter monetary value for coin conversion.
+          <input name="myfield" type="text" ng-model="money" input-validate="convert"/>
+	      <input type="submit" value="Convert" />
+	   </form>
+       </br>
+       <table>
+	     <tr>
+		   <th id="heading" colspan="2">Converting {{ amount }} pennies into coins.</th>
+		 </tr>
+         <tr>
+           <td><b>Coin</b></td>
+           <td align="right"><b>Amount</b></td>
+         </tr>
+		 <tr ng-repeat="(f1,f2) in coins | orderBy:'-value'">
+		   <td ng-if="f2>0">{{ f1 }}</td>
+		   <td ng-if="f2>0" align="right">{{ f2 }}</td>
+		 </tr>  
+	   </table>
+    </div>
+    <footer><p>&copy Coinage 2014</p></footer>
+</body>
+</html>
