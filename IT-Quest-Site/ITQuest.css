@@ -1,0 +1,201 @@
+.header {
+padding: 10px;	
+margin: 10px;
+/*background-color: #003EFF;*/
+background-color: #337ab7;
+border-radius: 5px;
+font-weight: bold;
+
+}
+
+.search-bar, .icon_search {
+float: right;
+margin-top: -22px;
+margin-right: 28px;
+}
+
+
+
+.header a, .menu-assmnt li a, .menu-soltn li a{
+color: white;
+}
+
+.itquest-main, .about-main-page, #quiz-software, #quiz-hardware, .beginners-main-page, .intermediate-main-page, .advance-main-page, .search-main{
+background-image: url("http://images6.fanpop.com/image/photos/36100000/Christmas-image-christmas-36118465-1920-1200.jpg");
+
+}
+
+.itquest-main, .about-main-page, #quiz-software, #quiz-hardware {
+height: 600px;
+}
+
+
+
+.middle-portion{
+width: 600px;
+height: 400px;
+border: 6px solid #d3d3d3;
+border-radius: 0px;
+}
+
+.dropdown-menu>li>a{
+font-weight: bold;
+}
+.menu-assmnt, .menu-soltn {
+background-color: #337ab7;
+
+}
+
+#tabs .border{
+background-color: #e0e0e0;
+}
+
+#tabs{
+
+background: #e0e0e0;
+}
+
+
+.main {
+text-align: center;
+font-family: "Times New Roman", Georgia, Serif;
+}
+.main p {
+color: #337ab7;
+}
+
+.main p{
+font-size: 20px;
+}
+
+
+.learn-code {
+text-style:none;
+color: #337ab7;
+font-weight: bold;
+font-size: 26px;
+text-align: center;
+
+}
+
+
+.footer  {
+text-align: center;
+font-size: 10px;
+color: blue;
+font-style: italic;
+font-weight: bold;
+margin-top: 10px;
+}
+
+.four-img{
+height: 40px;
+width: 200px;
+
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img  {
+      width: 70%;
+      margin: auto;
+  }
+  
+ .carousel-inner > .item > img
+{
+ width: 460px;
+ height: 345px;
+}
+ 
+#tabs-2 h3{
+font-family: sans-serif;
+font-weight: 700;
+}
+ 
+ #tabs-3 h1{
+ text-align: center;
+ }
+ 
+ #tabs-1, #tabs-2, #tabs-3 {
+ background-color: #e0e0e0;
+ /*#C6E2FF;*/
+ 
+ }
+ 
+.method, .courses, .team  {
+background-color: white;
+border-radius: 5px;
+font-weight:  bold;
+font-family: sans-serif;
+
+} 
+
+.heading {
+font-family: "Times New Roman", Georgia, Serif;
+}
+
+#quiz-software > h1, #quiz-hardware h1, .beginners-main-page h1, .intermediate-main-page h1, .advance-main-page h1{
+text-align: center;
+font-family: "Times New Roman", Georgia, Serif;
+}
+
+.question-area {
+background-color: #C6E2FF;
+border-radius: 0px;
+width: 600px;
+height: 320px;
+padding: 10px;
+font-family: "Times New Roman", Georgia, Serif;
+font-size: 17px;
+border: 6px solid #d3d3d3;
+}
+#progressbar{
+border: 1px solid;
+height: 20px;
+margin-top: 10px;
+border-color: #959aa6 #b4b9c3 #d0d5de;
+border-radius: 50px;
+background: #337ab7;
+box-shadow: inset 0 1px 3px #b4b9c3;
+}
+
+ #contact-form {
+ color: black;
+}
+ .comments-input {
+ width: 400px;
+ height: 150px;
+ }
+ 
+.vertical-bar{
+background-color: #f0fffa;
+height: 400px;
+width: 30px;
+border-radius: 5px;
+}
+
+.begin-but {
+background: #f0fffa;
+}
+
+.vertical-bar-inter{
+background-color: lavender;
+height: 400px;
+width: 30px;
+border-radius: 5px;
+}
+
+.inter-but{
+background: lavender;
+}
+
+.vertical-bar-advance{
+background-color: #FFF0F5;
+height: 400px;
+width: 30px;
+border-radius: 5px;
+}
+
+.advn-but{
+background: #fff0f5;
+}
+

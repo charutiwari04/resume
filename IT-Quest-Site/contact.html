@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"
+         type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="ITQuest.js"></script>
+<script type="text/javascript" src="match-columns.js"></script>
+<link type="text/css" href="ITQuest.css" rel="stylesheet" />
+<!--<link type="text/css" href="bootstrap.min.css" rel="stylesheet" />-->
+</head>
+<body>
+   
+   <div class="header">
+     <ul class="nav nav-pills">
+	   <li><a href="ITQuest.html">Home</a></li>
+	   <li><a href="About.html">About ITQuest</a></li>
+	   <li class="dropdown"><a class="dropdown-toggle assessment" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Assessment<span class="caret"></span></a>
+	      <ul class="dropdown-menu menu-assmnt">
+		      <li><a href="Software-quiz.html">Software</a></li>
+		      <li><a href="Hardware-quiz.html">Hardware</a></li>
+		  </ul>
+	   </li>
+	   <li class="dropdown"><a class="dropdown-toggle solution" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Solutions<span class="caret"></span></a>
+	      <ul class="dropdown-menu menu-soltn">
+		      <li><a href="beginners.html">Beginners</a></li>
+		      <li><a href="intermediate.html">Intermediate</a></li>
+			  <li><a href="advance.html">Advance</a></li>
+		  </ul>
+	   </li>
+	   <li><a href="contact.html">Contact</a></li>
+	 </ul>
+	 <div class="search-bar">
+	 <form action="search.html" class="navbar-form navbar-right">
+        <div class="input-group-btn  icon_search">
+           <button type="submit" class="btn btn-info"  style="background: orange;">
+           <span class="glyphicon glyphicon-search"></span>
+           </button>
+        </div>
+     </form>
+	 </div>
+   </div>
+   
+   <div class="container">
+    
+ 	<!--<form id="form1" action="http://192.168.1.9/process.php" method="post">-->
+	<form id="contact-form" action="submit.html" method="post">
+      <b>FirstName:</b><br /><input type="text" name="firstname" placeholder="Please enter first name" required /><br /><br />
+      <b>LastName:</b><br /><input type="text" name="lastname" placeholder="Please enter first name" required /><br /><br />
+      <b>Phone Number:</b><br /><input id="phoneno" type="tel" name="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+	  <i>Format:XXX-XXX-XXXX</i><br /><br />
+	  <b>Email:</b><br /><input id="emailin" type="email" name="email" required /><br /><br />
+	  <b>Website:</b><br /><input id="website" type="url" name="web" pattern="http?://.+" /><br /><br />
+	  <b>Comments:</b><br /><input type="text" name="comments" class="comments-input" /><br /><br />
+      <!--<input id="submit" type="submit" value="Submit" />-->
+	  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          Submit
+      </button>
+	  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Are you sure?</h4>
+                  </div>
+                  <div class="modal-body">
+                   This form will submit your query into our database.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+				  </div>
+             </div>
+         </div>
+      </div>
+	</form>
+   </div>
+   
+   <div class="footer">
+      <p>COPYRIGHT &copy 2015 ITQUEST.COM | FIND US AT:</p>
+	     <div class="container four-img"> 
+			     
+				 <div class="row" data-match-columns=true>
+	               <div class="col-md-3 four">
+	                   <img width="40" height="40" src="http://i.imgur.com/umDsi9f.png" >
+	               </div>
+				   <div class="col-md-3 four">
+	                   <img width="40" height="40"src="http://media.tumblr.com/tumblr_lzf7g3OW971qh5czz.png" >
+	               </div>
+				   <div class="col-md-3 four">
+	                   <img width="40" height="40" src="http://www.ctlconline.com/portals/1/Icons/linkedin%20vector%20080311.png" >
+	               </div>
+				   <div class="col-md-3 four">
+	                   <img width="40"  height="40" src="https://cdn0.iconfinder.com/data/icons/yooicons_set01_socialbookmarks/512/social_google_box_white.png" >
+	               </div>
+				 </div>
+		</div>
+            
+   </div>
+
+
+</body>
+</html>

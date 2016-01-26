@@ -1,0 +1,23 @@
+.header {
+padding: 10px;
+margin: 10px;
+background-color: #001122;
+border-radius: 5px;
+}
+/*.slide {
+border-radius: 5px;
+}*/
+
+.header a {
+color: white;
+}
+
+
+
+.footer  {
+text-align: center;
+font-size: 10px;
+color: gray;
+padding: 20px;
+margin: 10px;
+}
