@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Neighborhood Map</title>
+	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	
+</head>
+<body>
+  <div class="content">
+    <div class="heading">
+        <header><strong>Famous Museums of San Francisco, CA</strong></header>
+	</div>
+	<div class="ham-icon">
+		<span class="glyphicon glyphicon-menu-hamburger"></span>
+	</div>
+	    <hr>
+	<main class="main">
+		   <section class="query-data">
+	        <p><b>Learn more about the Museums</b></p>
+	        <input type="search" data-bind="textInput: searchValue" />
+			<ul class="list" data-bind="template:{name:'search-val',foreach: Values}"></ul>
+			<script type="text/html" id="search-val">
+			    <li data-bind="text: $data, css: {highlight: $data === $parent.currentSelected()},click: AppViewModel.listenListClickEvent"></li>
+			</script>
+		   </section>
+		   <section class="map-data">
+			<map class="img-responsive" id="googleMap"></map>
+		   </section>
+	</main>
+  </div>
+  <script src="js/knockout-min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="css/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script async src="http://maps.googleapis.com/maps/api/js?libraries=places&callback=AppViewModel.initializeMap" onerror="AppViewModel.googleError()"></script>
+  </body>
+</html>

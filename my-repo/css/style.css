@@ -1,0 +1,84 @@
+body{
+	background-color: #00ffff;
+	width: 100%;
+	height: 500px;
+}
+.content{
+	padding: 2%;
+}
+.ham-icon{
+	float: right;
+	margin-top: -3%;
+}
+hr{color: white;}
+#error{
+	color: gray;
+	font-style: italic;
+}
+.list a{
+	color: black;
+    display: block;
+}
+.main{
+	display: flex;
+	width: 100%;
+}
+.highlight{
+	background-color: yellow;
+	font-weight: bold;
+}
+.query-data{
+	width: 20%;
+	padding: 2%;
+	margin: 0 2%;
+	background-color: #c0c0c0;
+	border: 1px solid white;
+}
+.map-data{
+	width: 80%;
+   }
+#googleMap{
+	height: 500px;
+	width: 100%;
+}
+#mapA{
+	display: block;
+	height: 100%;
+	margin: 0 2%;
+	border: 1px solid white;
+}
+.modal-content{
+	padding: 2.5%;
+}
+h1,h4,h6,p,a{
+		font-size: 1.1em;
+}
+@media screen and (max-width: 500px){
+input{
+	width: 80%;
+}
+.heading{
+	width: 50%;
+}
+.ham-icon{
+	float: right;
+	margin-top: -10%;
+}
+body{
+	height: 500px;
+}
+#googleMap{
+    height: 500px;
+}
+}
+@media screen and (max-width: 1050px){
+	.query-data{
+	width: 40%;
+}
+.map-data{
+	width: 60%;	
+}
+h1,h4,h6,p,a{
+		font-size: 1.2em;
+}
+}
